@@ -3,7 +3,7 @@ from setuptools import setup
 setup(
     name='dbt-redshift-dryrun',
     version='0.7.0',  
-    scripts="cli/app.py",
+    scripts=["cli/app.py"],
     description='Python package dry running redshift queries',
     url='https://github.com/shassaan/dbt-redshift-dryrun',
     author='Syed Hassaan Ahmed',
