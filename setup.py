@@ -8,6 +8,8 @@ setup(
     author='Syed Hassaan Ahmed',
     author_email='syedhassaan.103@gmail.com',
     license='BSD 2-clause',
+    long_description=open('README.md').read(),
+    long_description_content_type='text/markdown',
     packages=['dbt-redshift-dryrun'],
     install_requires=[],
 
