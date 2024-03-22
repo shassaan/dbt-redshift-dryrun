@@ -1,9 +1,11 @@
 from setuptools import setup
 
 setup(
-    name='dbt-redshift-dryrun',
+    name='dbt_redshift_dryrun',
     version='0.7.0',  
-    scripts=["cli/app.py"],
+    entry_points = {
+        'console_scripts': ['dryrun=dbt_redshift_dryrun.app:cli'],
+    },
     description='Python package dry running redshift queries',
     url='https://github.com/shassaan/dbt-redshift-dryrun',
     author='Syed Hassaan Ahmed',
@@ -11,7 +13,7 @@ setup(
     license='BSD 2-clause',
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
-    packages=['dbt-redshift-dryrun'],
+    packages=['dbt_redshift_dryrun'],
     install_requires=[],
 
     classifiers=[
